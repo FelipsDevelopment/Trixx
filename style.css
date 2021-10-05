@@ -50,6 +50,13 @@
     margin: 6% 4% 4% 4%; 
 }
 
+.pedido-content {
+    width: 100%;
+    margin-top: 2%;
+}
+
+
+
 .cartao{
     height: 100%;
     padding: 4%; 
@@ -149,12 +156,18 @@
 
 #btn-finalizar {
     margin: 0%;
-    width: 80%;
-    height: 3.5rem;
+    margin-left: 30%;
+    width: 40%;
+    height: 3rem;
     border-radius: 5px;
+    border: #f2f2f2;
     background-color: #58C22E;
     color: #f2f2f2;
     justify-content: center;
+    box-shadow: 3px 3px rgba(42, 42, 42, 0.445);
+    
+    
+
 }
 
 /*  Parte boleto bancário   */
@@ -173,7 +186,6 @@
 
 }
 
-
 .cod-boleto {
     text-decoration: #f2f2f2;
 }
@@ -182,14 +194,13 @@
     width: 40%;
 }
 
-
 /*  Resumo de pedido  -  coluna 2  */
 
 .pedido {
     display: flex;
-    height: 90%;
+    height: 80%;
     padding: 2%;
-    border: 4px solid   rgba(0, 0, 0, 0.20);
+    ;
 }
 
 .titulo-pedido {
@@ -197,22 +208,23 @@
 }
 
 .itens {
-    border: 4px solid   rgba(0, 0, 0, 0.20);
+    
     height: 80%;
     width: 50%;
     float: left;
-
+    margin-top: 3%;
+    padding: 5%;
+    text-align: center;
 }
 
 .endereco {
-    border: 4px solid   rgba(0, 0, 0, 0.20);
     height: 80%;
     width: 50%;
     float: right;
-
+    padding: 5%;
+    margin-top:3%;
+    text-align: center;
 }
-
-
 
 .btn-boleto{
     position: relative;
@@ -224,10 +236,14 @@
     margin-left: 3%;
 }
 
+.div-finalizar {
+    margin-bottom: 3%;
+}
 
 
 
 
+/*------------------------ media Queries ------------------------*/
 
 
 @media (max-width: 1400px) {
@@ -253,6 +269,7 @@
 
     
 }
+
 
 @media (max-width: 940px) {
     .title {
